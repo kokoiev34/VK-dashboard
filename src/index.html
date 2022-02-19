@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/index.scss">
+    <title>Grid page</title>
+</head>
+<body>
+    <div class="app">
+        <div class="nav">
+            <a href="/" class="nav__logo">
+                <img src="./assets/photo/nav/logo.png" alt="logo" class="nav__img">
+            </a>
+            <div class="nav__links">
+                <a href="/" class="nav__links-home">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                        <path
+                            d="M25.1102 11.1062C25.1096 11.1057 25.109 11.1051 25.1085 11.1045L14.9094 0.906876C14.4747 0.472 13.8967 0.232437 13.2819 0.232437C12.6671 0.232437 12.0891 0.471809 11.6542 0.906685L1.46047 11.0992C1.45703 11.1026 1.4536 11.1062 1.45017 11.1097C0.557437 12.0075 0.558963 13.4641 1.45455 14.3596C1.86372 14.7689 2.40413 15.006 2.98192 15.0308C3.00539 15.0331 3.02904 15.0342 3.05288 15.0342H3.45938V22.5391C3.45938 24.0241 4.66781 25.2324 6.15341 25.2324H10.1436C10.548 25.2324 10.8761 24.9046 10.8761 24.5V18.6162C10.8761 17.9385 11.4274 17.3873 12.1051 17.3873H14.4587C15.1364 17.3873 15.6877 17.9385 15.6877 18.6162V24.5C15.6877 24.9046 16.0156 25.2324 16.4202 25.2324H20.4104C21.896 25.2324 23.1044 24.0241 23.1044 22.5391V15.0342H23.4813C24.0959 15.0342 24.6739 14.7949 25.109 14.36C26.0056 13.463 26.006 12.0038 25.1102 11.1062Z"
+                            fill="#CACACA" />
+                    </svg>
+                </a>
+                <a href="/" class="nav__links-documents">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                        <g filter="url(#filter0_d_1_596)">
+                            <path d="M9.38475 11.8392H11.0579V13.5123H9.38475V11.8392Z" fill="#CACACA" />
+                            <path
+                                d="M4.78174 22.482C4.78174 23.9673 5.99004 25.1756 7.4753 25.1756H27.088C28.5734 25.1756 29.7817 23.9673 29.7817 22.482V7.91676H4.78174V22.482ZM14.9283 10.3744H25.9113C26.3157 10.3744 26.6438 10.7023 26.6438 11.1068C26.6438 11.5112 26.3157 11.8392 25.9113 11.8392H14.9283C14.5237 11.8392 14.1958 11.5112 14.1958 11.1068C14.1958 10.7023 14.5237 10.3744 14.9283 10.3744ZM14.9283 13.5124H25.9113C26.3157 13.5124 26.6438 13.8402 26.6438 14.2448C26.6438 14.6493 26.3157 14.9772 25.9113 14.9772H14.9283C14.5237 14.9772 14.1958 14.6493 14.1958 14.2448C14.1958 13.8402 14.5237 13.5124 14.9283 13.5124ZM7.9199 11.1068C7.9199 10.7023 8.24777 10.3744 8.65232 10.3744H11.7903C12.1948 10.3744 12.5227 10.7023 12.5227 11.1068V14.2448C12.5227 14.6493 12.1948 14.9772 11.7903 14.9772H8.65232C8.24777 14.9772 7.9199 14.6493 7.9199 14.2448V11.1068ZM8.65232 16.6503H25.9113C26.3157 16.6503 26.6438 16.9782 26.6438 17.3827C26.6438 17.7873 26.3157 18.1152 25.9113 18.1152H8.65232C8.24777 18.1152 7.9199 17.7873 7.9199 17.3827C7.9199 16.9782 8.24758 16.6503 8.65232 16.6503ZM8.65232 19.7885H25.9113C26.3157 19.7885 26.6438 20.1164 26.6438 20.5209C26.6438 20.9253 26.3157 21.2533 25.9113 21.2533H8.65232C8.24777 21.2533 7.9199 20.9253 7.9199 20.5209C7.9199 20.1164 8.24758 19.7885 8.65232 19.7885Z"
+                                fill="#CACACA" />
+                            <path
+                                d="M27.088 0.17572H7.4753C5.99004 0.17572 4.78174 1.38403 4.78174 2.86928V6.45166H29.7817V2.86928C29.7817 1.38403 28.5734 0.17572 27.088 0.17572ZM22.7732 4.77853H11.7901C11.3857 4.77853 11.0577 4.45066 11.0577 4.04611C11.0577 3.64156 11.3857 3.31369 11.7901 3.31369H22.7732C23.1777 3.31369 23.5056 3.64156 23.5056 4.04611C23.5056 4.45066 23.1777 4.77853 22.7732 4.77853Z"
+                                fill="#CACACA" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d_1_596" x="0.781738" y="0.17572" width="33" height="32.9999"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                    result="hardAlpha" />
+                                <feOffset dy="4" />
+                                <feGaussianBlur stdDeviation="2" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_596" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_596" result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="/" class="nav__links-contacts">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="23" viewBox="0 0 26 23" fill="none">
+                        <path
+                            d="M22.3743 10.8873C21.1809 11.871 19.6527 12.4626 17.9891 12.4626C17.4133 12.4626 16.8537 12.3917 16.3186 12.2583C17.2754 13.7152 17.8329 15.4566 17.8329 17.326V20.0716C17.8329 21.0985 17.4579 22.039 16.8388 22.7654H23.0884C24.5737 22.7654 25.782 21.5571 25.782 20.0716V17.326C25.782 14.6538 24.4298 12.2917 22.3743 10.8873Z"
+                            fill="#CACACA" />
+                        <path
+                            d="M8.57506 10.9978C11.5744 10.9978 14.0144 8.55769 14.0144 5.55839C14.0144 2.55889 11.5744 0.11882 8.57506 0.11882C5.57575 0.11882 3.13568 2.55889 3.13568 5.55839C3.13568 8.55769 5.57575 10.9978 8.57506 10.9978Z"
+                            fill="#CACACA" />
+                        <path
+                            d="M17.9888 10.9978C20.9882 10.9978 23.4284 8.55769 23.4284 5.55839C23.4284 2.55889 20.9882 0.11882 17.9888 0.11882C16.5379 0.11882 15.218 0.68988 14.2417 1.61895C15.0212 2.73704 15.4792 4.09507 15.4792 5.55839C15.4792 7.02151 15.0212 8.37955 14.2417 9.49763C15.218 10.4267 16.5379 10.9978 17.9888 10.9978Z"
+                            fill="#CACACA" />
+                        <path
+                            d="M12.9602 10.8873C11.767 11.871 10.2388 12.4626 8.57503 12.4626C6.91125 12.4626 5.38308 11.8712 4.18965 10.8873C2.1341 12.2917 0.781982 14.6538 0.781982 17.326V20.0716C0.781982 21.5571 1.99029 22.7654 3.47573 22.7654H13.6741C15.1596 22.7654 16.3679 21.5571 16.3679 20.0716V17.326C16.3679 14.6538 15.016 12.2917 12.9602 10.8873Z"
+                            fill="#CACACA" />
+                    </svg>
+                </a>
+                <a href="/" class="nav__links-message">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 26 18" fill="none">
+                        <path d="M17.3536 9.43042L25.7817 14.7585V3.87729L17.3536 9.43042Z" fill="#CACACA" />
+                        <path d="M0.781738 3.87729V14.7585L9.20986 9.43042L0.781738 3.87729Z" fill="#CACACA" />
+                        <path
+                            d="M24.2192 0.708542H2.34424C1.56455 0.708542 0.945801 1.28979 0.828613 2.03823L13.2817 10.2429L25.7349 2.03823C25.6177 1.28979 24.9989 0.708542 24.2192 0.708542Z"
+                            fill="#CACACA" />
+                        <path
+                            d="M15.9224 10.3742L13.7114 11.8304C13.5802 11.9164 13.4317 11.9585 13.2817 11.9585C13.1317 11.9585 12.9833 11.9164 12.8521 11.8304L10.6411 10.3726L0.831738 16.5773C0.952051 17.3195 1.56768 17.896 2.34424 17.896H24.2192C24.9958 17.896 25.6114 17.3195 25.7317 16.5773L15.9224 10.3742Z"
+                            fill="#CACACA" />
+                    </svg>
+                </a>
+                <a href="/" class="nav__links-video">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 20 26" fill="none">
+                        <path
+                            d="M18.2861 11.0178L4.39962 1.51116C3.75831 1.07182 3.11215 0.839294 2.57506 0.839294C1.53671 0.839294 0.894394 1.67265 0.894394 3.06757V23.6143C0.894394 25.0076 1.5359 25.8393 2.57183 25.8393C3.10972 25.8393 3.74556 25.6066 4.38829 25.166L18.2813 15.6596C19.1747 15.0472 19.6695 14.2231 19.6695 13.3382C19.6697 12.4538 19.1806 11.63 18.2861 11.0178Z"
+                            fill="#CACACA" />
+                    </svg>
+                </a>
+                <a href="/" class="nav__links-statistics">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                        <path
+                            d="M7.42236 12.0504H2.979C2.57417 12.0504 2.24658 12.378 2.24658 12.7829V16.445H8.15479V12.7829C8.15479 12.378 7.8272 12.0504 7.42236 12.0504Z"
+                            fill="#CACACA" />
+                        <path d="M8.15479 17.9098H2.24658V22.3532H8.15479V17.9098Z" fill="#CACACA" />
+                        <path
+                            d="M15.479 6.19106H11.0845C10.6796 6.19106 10.3521 6.51864 10.3521 6.92348V16.445H16.2114V6.92348C16.2114 6.51864 15.8838 6.19106 15.479 6.19106Z"
+                            fill="#CACACA" />
+                        <path d="M16.2114 17.9098H10.3521V22.3532H16.2114V17.9098Z" fill="#CACACA" />
+                        <path
+                            d="M23.5845 0.282852H19.1411C18.7363 0.282852 18.4087 0.61044 18.4087 1.01527V7.6559H24.3169V1.01527C24.3169 0.61044 23.9893 0.282852 23.5845 0.282852Z"
+                            fill="#CACACA" />
+                        <path d="M24.3169 9.12074H18.4087V22.3532H24.3169V9.12074Z" fill="#CACACA" />
+                    </svg>
+                </a>
+                <a href="/" class="nav__links-settings">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                        <path
+                            d="M24.6454 9.81694H22.9266C22.8063 9.47694 22.6678 9.14323 22.5117 8.81724L23.7276 7.60133C24.1714 7.15762 24.1714 6.43807 23.7276 5.99429L20.5136 2.7802C20.3004 2.56709 20.0114 2.44732 19.71 2.44732C19.4086 2.44732 19.1196 2.56701 18.9065 2.7802L17.6905 3.9961C17.3645 3.84004 17.0308 3.70156 16.6908 3.58126V1.86239C16.6908 1.23482 16.182 0.726028 15.5545 0.726028H11.009C10.3814 0.726028 9.87265 1.23482 9.87265 1.86239V3.58126C9.53265 3.70156 9.19894 3.84004 8.87303 3.9961L7.65704 2.7802C7.21333 2.33641 6.49378 2.33641 6.05 2.7802L2.83583 5.99421C2.62265 6.20732 2.50295 6.49633 2.50295 6.79777C2.50295 7.09913 2.62265 7.38815 2.83583 7.60126L4.05174 8.81724C3.89568 9.14323 3.75727 9.47694 3.63697 9.81694H1.9181C1.29053 9.81694 0.781738 10.3257 0.781738 10.9533V15.4988C0.781738 16.1263 1.29053 16.6351 1.9181 16.6351H3.63697C3.75727 16.9751 3.89568 17.3088 4.05174 17.6348L2.83583 18.8508C2.62265 19.0639 2.50295 19.3529 2.50295 19.6543C2.50295 19.9557 2.62265 20.2447 2.83583 20.4578L6.05007 23.6719C6.49386 24.1157 7.21333 24.1157 7.65712 23.6719L8.8731 22.456C9.19901 22.6121 9.53272 22.7506 9.87265 22.8709V24.5897C9.87265 25.2172 10.3814 25.726 11.009 25.726H15.5545C16.182 25.726 16.6908 25.2172 16.6908 24.5897V22.8708C17.0308 22.7505 17.3645 22.612 17.6905 22.456L18.9065 23.6719C19.3503 24.1156 20.0698 24.1157 20.5136 23.6719L23.7276 20.4578C24.1714 20.014 24.1714 19.2945 23.7276 18.8507L22.5117 17.6348C22.6679 17.3088 22.8064 16.975 22.9267 16.6351H24.6454C25.273 16.6351 25.7817 16.1263 25.7817 15.4988V10.9533C25.7817 10.3257 25.273 9.81694 24.6454 9.81694ZM13.2817 17.7715C10.7754 17.7715 8.73628 15.7324 8.73628 13.226C8.73628 10.7197 10.7754 8.68057 13.2817 8.68057C15.7881 8.68057 17.8272 10.7197 17.8272 13.226C17.8272 15.7324 15.7881 17.7715 13.2817 17.7715Z"
+                            fill="#CACACA" />
+                    </svg>
+                </a>
+            </div>
+            <div class="nav__toogle">
+                <label class="nav__toogle-switcher">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button type="button" class="nav__menu-hidden"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg></button>
+        </div>
+        <div class="header">
+            <h1 class="header__title">Statistics</h1>
+            <div class="header__search">
+                <input placeholder="Search" type="search" class="header__search-input">
+                <button type="button" class="header__search-notification">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 22 22" fill="none">
+                        <path d="M10.0694 22C11.7296 22 13.1184 20.8165 13.4373 19.25H6.7016C7.02068 20.8165 8.40944 22 10.0694 22Z" fill="#979797"/>
+                        <path d="M18.7125 16.9606L18.7126 16.9604C18.7975 16.5512 18.6541 16.1452 18.3338 15.8757C17.0097 14.7657 16.2002 13.1815 16.0285 11.485C12.4274 11.2487 9.56946 8.24399 9.56946 4.58337C9.56946 3.79464 9.7058 3.03884 9.95122 2.33453C6.73818 2.39752 4.15285 5.02173 4.15285 8.24998V10.8056C4.15285 12.7669 3.29327 14.6184 1.78765 15.8918C1.46903 16.1645 1.32645 16.5982 1.4422 17.0266L18.7125 16.9606ZM18.7125 16.9606C18.6103 17.4544 18.1131 17.8334 17.5266 17.8334H2.60784C2.04868 17.8334 1.56768 17.4895 1.44225 17.0268L18.7125 16.9606Z" fill="#CACACA" stroke="#CACACA"/>
+                        <path d="M21 4.50008C21 6.98537 18.9854 9 16.4999 9C14.0146 9 12 6.98537 12 4.50008C12 2.0148 14.0146 0 16.4999 0C18.9854 0 21 2.0148 21 4.50008Z" fill="#7F7FD5"/>
+                        </svg>
+                </button>
+                <button type="button" class="header__search-hidden-btn"><svg class="header__search-hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                </button>
+            </div>
+            <div class="header__profile">
+                <a href="/" class="header__profile-name">Anya</a>
+                <a href="/" class="header__profile-photo">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                        <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" fill="url(#paint0_linear_1_605)"/>
+                        <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" fill="url(#pattern0)"/>
+                        <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#EBEBEB"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_1_605" transform="translate(-0.0224348 0.0373913) scale(0.00416667 0.00384615)"/>
+                        </pattern>
+                        <linearGradient id="paint0_linear_1_605" x1="25" y1="0" x2="25" y2="111" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white"/>
+                        <stop offset="1" stop-color="white" stop-opacity="0"/>
+                        </linearGradient>
+                        <image id="image0_1_605" width="240" height="260" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                        </svg>
+                </a>
+                <button type="button" class="header__profile-menu" onclick="alert('Sorry, at the moment login arent working. It will be fix soon.')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5.28571 5L9 1" stroke="#CACACA" stroke-linecap="round"/>
+                        </svg>
+                </button>
+            </div>
+            <button type="button" class="header__profile-hidden-btn"><svg class="header__profile-hidden"  xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+              </svg>
+            </button>
+        </div>
+        <div class="main">
+            <div class="card">
+                <div class="card__header">
+                    <h2 class="card__title">Friends</h2>
+                    <button type="button" class="card__btn"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="5" viewBox="0 0 26 5" fill="none">
+                            <circle cx="2.5" cy="2.5" r="2.5" transform="rotate(-90 2.5 2.5)" fill="#979797"/>
+                            <circle cx="12.5" cy="2.5" r="2.5" transform="rotate(-90 12.5 2.5)" fill="#979797"/>
+                            <circle cx="23.5" cy="2.5" r="2.5" transform="rotate(-90 23.5 2.5)" fill="#979797"/>
+                        </svg></button>
+                </div>
+                <div class="card__footer">
+                    <p class="card__counter">271 people</p>
+                    <span class="card__percent">+0.7%</span>
+                    <svg class="card__arrow" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+                            <g filter="url(#filter0_d_1_549)">
+                            <path d="M5 6.07698L10.5 0.999999M10.5 0.999999L16 6.07698M10.5 0.999999L10.5 13" stroke="#7F7FD5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_1_549" x="0" y="0" width="21" height="22" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_549"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_549" result="shape"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__header">
+                    <h2 class="card__title">Unique visitors</h2>
+                    <button type="button" class="card__btn"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="5" viewBox="0 0 26 5" fill="none">
+                            <circle cx="2.5" cy="2.5" r="2.5" transform="rotate(-90 2.5 2.5)" fill="#979797"/>
+                            <circle cx="12.5" cy="2.5" r="2.5" transform="rotate(-90 12.5 2.5)" fill="#979797"/>
+                            <circle cx="23.5" cy="2.5" r="2.5" transform="rotate(-90 23.5 2.5)" fill="#979797"/>
+                        </svg></button>
+                </div>
+                <div class="card__footer">
+                    <p class="card__counter">69 people</p>
+                    <span class="card__percent">-1.7%</span>
+                    <svg class="card__arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
+                            <path d="M12 7.92302L6.50005 13M6.50005 13L1 7.92302M6.50005 13L6.50005 0.999999" stroke="#E786D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__header">
+                    <h2 class="card__title">Followers</h2>
+                    <button type="button" class="card__btn"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="5" viewBox="0 0 26 5" fill="none">
+                            <circle cx="2.5" cy="2.5" r="2.5" transform="rotate(-90 2.5 2.5)" fill="#979797"/>
+                            <circle cx="12.5" cy="2.5" r="2.5" transform="rotate(-90 12.5 2.5)" fill="#979797"/>
+                            <circle cx="23.5" cy="2.5" r="2.5" transform="rotate(-90 23.5 2.5)" fill="#979797"/>
+                        </svg></button>
+                </div>
+                <div class="card__footer">
+                    <p class="card__counter">288 people</p>
+                    <span class="card__percent">+1%</span>
+                    <svg class="card__arrow" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+                            <g filter="url(#filter0_d_1_549)">
+                            <path d="M5 6.07698L10.5 0.999999M10.5 0.999999L16 6.07698M10.5 0.999999L10.5 13" stroke="#7F7FD5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_1_549" x="0" y="0" width="21" height="22" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_549"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_549" result="shape"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                </div>
+            </div>
+            <div class="line-chart">
+                <div class="line-chart__header">
+                    <h2 class="line-chart__title">Audience reach</h2>
+                    <time class="line-chart__calendar">31/01/2020 - 06/02/2020</time>
+                        <input class="line-chart__checkbox " type="checkbox" id="People">
+                        <label class="line-chart__label" for="People">People</label>
+                        <input class="line-chart__checkbox-follower" type="checkbox" id="follower">
+                        <label class="line-chart__label-follower" for="follower">Follower</label>
+                </div>
+                <div class="line-chart__background-img"></div>
+            </div>
+            <div class="pie">
+                <h2 class="pie__title">Reach by device</h2>
+                <div class="pie__chart"></div>
+            </div>
+            <div class="grouped-bar">
+                <div class="grouped-bar__header">
+                    <h2 class="grouped-bar__header-title">Gender / Age</h2>
+                        <input class="grouped-bar__checkbox-women" type="checkbox" id="women">
+                        <label class="grouped-bar__label-women" for="women">women</label>
+                        <input class="grouped-bar__checkbox-men" type="checkbox" id="men">
+                        <label class="grouped-bar__label-men" for="men">men</label>
+                </div>
+                <div class="grouped-bar__background-img"></div>
+            </div>
+            <div class="progress-chart">
+                <div class="progress-chart__header">
+                    <h2 class="progress-chart__header-title">Geo</h2>
+                    <span class="progress-chart__header-subtitle-country">Country</span>
+                    <span class="progress-chart__header-subtitle-city">city</span>
+                </div>
+                <div class="progress-chart__charts">
+                    <div class="progress-chart__chart">
+                        <div class="progress-chart__chart-title">
+                            <span class="progress-chart__name">Russia</span>
+                            <span class="progress-chart__percent">94%</span>
+                        </div>
+                        <div class="progress-chart__bar">
+                            <div class="progress-chart__bar-fill progress-chart__bar-fill_russia"></div>
+                        </div>
+                    </div>
+                    <div class="progress-chart__chart">
+                        <div class="progress-chart__chart-title">
+                            <span class="progress-chart__name">Ukraine</span>
+                            <span class="progress-chart__percent">0,20%</span>
+                        </div>
+                        <div class="progress-chart__bar">
+                            <div class="progress-chart__bar-fill progress-chart__bar-fill_ukraine"></div>
+                        </div>
+                    </div>
+                    <div class="progress-chart__chart">
+                        <div class="progress-chart__chart-title">
+                            <span class="progress-chart__name">Mongolia</span>
+                            <span class="progress-chart__percent">0,13%</span>
+                        </div>
+                        <div class="progress-chart__bar">
+                            <div class="progress-chart__bar-fill progress-chart__bar-fill_mongolia"></div>
+                        </div>
+                    </div>
+                    <div class="progress-chart__chart">
+                        <div class="progress-chart__chart-title">
+                            <span class="progress-chart__name">China</span>
+                            <span class="progress-chart__percent">0,26%</span>
+                        </div>
+                        <div class="progress-chart__bar">
+                            <div class="progress-chart__bar-fill progress-chart__bar-fill_china"></div>
+                        </div>
+                    </div>
+                    <div class="progress-chart__chart">
+                        <div class="progress-chart__chart-title">
+                            <span class="progress-chart__name">USA</span>
+                            <span class="progress-chart__percent">0,20%</span>
+                        </div>
+                        <div class="progress-chart__bar">
+                            <div class="progress-chart__bar-fill progress-chart__bar-fill_usa"></div>
+                        </div>
+                    </div>
+                    <div class="progress-chart__chart">
+                        <div class="progress-chart__chart-title">
+                            <span class="progress-chart__name">Other</span>
+                            <span class="progress-chart__percent">1,37%</span>
+                        </div>
+                        <div class="progress-chart__bar">
+                            <div class="progress-chart__bar-fill progress-chart__bar-fill_other"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>

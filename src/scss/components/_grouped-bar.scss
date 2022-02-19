@@ -1,0 +1,98 @@
+.grouped-bar{
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 70px 20px 20px;
+    }
+    &__header-title{
+        @include h2;
+        flex-grow: 1;
+    }
+    &__background-img{
+        background-image: url(../assets/photo/grouped-chart/grouped-chart.png);
+        background-repeat: no-repeat;
+        height: 160px;
+        width: 800px;
+        margin-left: 25px;
+    }
+}
+
+// Checkbox for people
+.grouped-bar__checkbox[type="checkbox"]{
+    display: none;
+}
+
+.grouped-bar__label-men{
+    padding-left: 20px;
+}
+
+.grouped-bar__label-men::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid $sixth-color;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.grouped-bar__checkbox-men[type="checkbox"]:checked + .grouped-bar__label-men::before {
+    background-color: $sixth-color;
+}
+
+// Checkbox for Follower
+.grouped-bar__checkbox-women[type="checkbox"]{
+    display: none;
+}
+
+.grouped-bar__label-women{
+    padding-left: 20px;
+}
+
+.grouped-bar__label-women::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid $fith-color;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.grouped-bar__checkbox-women[type="checkbox"]:checked + .grouped-bar__label-women::before {
+    background-color: $fith-color;
+}
+
+// Media for tablets 992px
+@include lg{
+    .grouped-bar__header{
+        margin-left: 215px;
+        margin-right: 120px;
+    }
+    .grouped-bar__background-img{
+        background-position: center;
+        width: auto;
+        
+    }
+}
+
+// Media for smartphones 568px
+@include sm{
+    .grouped-bar{
+        padding: 15px;
+        min-width: 568px;
+        overflow: auto;
+    }
+    .grouped-bar__header{
+        margin: 0;
+        padding: 15px 0 20px 0;
+    }
+    .grouped-bar__header-title{
+        padding-left: 30px;
+    }
+    .grouped-bar__background-img{
+        margin: 0;
+        height: 160px;
+        width: 800px;
+    }
+}

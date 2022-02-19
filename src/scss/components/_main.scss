@@ -1,0 +1,84 @@
+.main{
+    grid-area: main;    
+    display: grid;
+    padding: 40px 0 40px 40px;
+    grid-template-columns: repeat(3, 341px);
+    grid-template-rows: 148px 242px 242px;
+    grid-template-areas: 
+                        "card card card"
+                        "line-chart line-chart pie"
+                        "grouped-bar grouped-bar progress-chart";
+    grid-gap: 37px 31px;
+    background: $third-color;
+}
+
+.card{
+    grid-area: card;
+    grid-column: span 1;
+    background-color: $secondary-color;
+    border-radius: $rounded;
+}
+
+.line-chart{
+    grid-area: line-chart;
+    background-color: $secondary-color;
+    border-radius: $rounded;
+}
+
+.pie{
+    grid-area: pie;
+    background-color: $secondary-color;
+    border-radius: $rounded;
+}
+
+.grouped-bar{
+    grid-area: grouped-bar;
+    background-color: $secondary-color;
+    border-radius: $rounded;
+}
+
+.progress-chart{
+    grid-area: progress-chart;
+    background-color: $secondary-color;
+    border-radius: $rounded;
+}
+
+// Media for large screens 1280px
+@include xl{
+    .main{
+        padding: 10px;
+        justify-content: center;
+        background-color: $third-color;
+    }
+}
+
+// Media for tablets 992px
+@include lg{
+    .main{
+        grid-template-columns: repeat(3, 330px);
+        grid-template-rows: 148px 242px 242px 242px;
+        grid-template-areas: 
+                        "card card card"
+                        "pie progress-chart progress-chart"
+                        "line-chart line-chart line-chart"
+                        "grouped-bar grouped-bar grouped-bar";
+    }
+}
+
+// Media for smartphones 568px
+@include sm{
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+                        "card"  
+                        "card"
+                        "card"
+                        "pie"
+                        "progress-chart"
+                        "line-chart"
+                        "grouped-bar";
+        padding: 15px;
+        grid-gap: 15px;
+    }
+}

@@ -1,0 +1,40 @@
+@font-face {
+    font-family: gilroy;
+    src: url(./fonts/Gilroy-Regular.ttf);
+}
+
+body{
+    background: $forth-color;
+    font-family: gilroy;
+    color: $primary-color;
+}
+
+
+// hover for nav #7F7FD5
+.app{
+    display: grid;
+    grid-template-columns: 98px 1fr;
+    grid-template-rows: 112px 1fr;
+    grid-template-areas: 
+                        "nav header"
+                        "nav main";
+    max-width: 1280px;
+    min-height: 880px;
+    margin: 160px auto 0;
+    border-radius: $rounded;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+@include xl{
+    .app{
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 100px 1fr;
+        grid-template-areas:
+                            "nav"
+                            "header"
+                            "main";
+        overflow: visible;
+    }
+}

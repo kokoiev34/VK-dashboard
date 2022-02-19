@@ -1,0 +1,105 @@
+.line-chart{
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 70px 30px 20px;
+    }
+    &__title{
+        @include h2;
+        flex-grow: 1;
+    }
+    &__background-img{
+        background-image: url(../assets/photo/linechart/linechart.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 716px;
+        height: 141px;
+    }
+}
+
+// Checkbox for people
+.line-chart__checkbox[type="checkbox"]{
+    display: none;
+}
+
+.line-chart__label{
+    padding-left: 20px;
+}
+
+.line-chart__label::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid $sixth-color;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.line-chart__checkbox[type="checkbox"]:checked + .line-chart__label::before {
+    background-image: url(../assets/photo/linechart/checkmark-purple.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+// Checkbox for Follower
+.line-chart__checkbox-follower[type="checkbox"]{
+    display: none;
+}
+
+.line-chart__label-follower{
+    padding-left: 20px;
+}
+
+.line-chart__label-follower::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid $fith-color;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.line-chart__checkbox-follower[type="checkbox"]:checked + .line-chart__label-follower::before {
+    background-image: url(../assets/photo/linechart/checkmark-pink.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+// Media for tablets 992px
+@include lg{
+    .line-chart__header{
+        margin-left: 150px;
+        margin-right: 120px;
+    }
+    .line-chart__background-img{
+        background-position: center;
+        width: auto;
+        overflow: auto;
+    }
+}
+
+// Media for smartphones 568px
+@include sm{
+    .line-chart{
+        padding: 15px;
+        min-width: 576px;
+        overflow: auto;
+    }
+    .line-chart__header{
+        display: block;
+        padding: 5px 0 5px 30px;
+        margin: 0;
+    }
+    .line-chart__title{
+        margin-bottom: 10px;
+    }
+    .line-chart__calendar{
+        margin: 0 100px 30px 0;
+    }
+    .line-chart__background-img{
+        width: 716px;
+        height: 141px;
+    }
+}

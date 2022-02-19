@@ -1,0 +1,90 @@
+.progress-chart{
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+    }
+    &__header-title{
+        @include h2;
+        flex-grow: 1;
+        margin-bottom: 10px;
+    }
+    &__header-subtitle-country{
+        margin-right: 10px;
+    }
+    &__header-subtitle-city{
+        color: #979797;
+    }
+    &__charts{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 3px;
+        height: 140px;
+    }
+    &__chart{
+        width: 120px;
+        margin-bottom: 10px;
+    }
+    &__chart-title{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+    &__bar{
+        width: 120px;
+        height: 10px;
+        background-color: #4D4D4D;
+        border-radius: $rounded;
+        overflow: hidden;
+    }
+    &__bar-fill{
+        height: 100%;
+        background-color: $sixth-color;
+        border-radius: $rounded;
+    }
+    &__bar-fill_russia{
+        width: 92%;
+    }
+    &__bar-fill_ukraine{
+        width: 0.2%;
+    }
+    &__bar-fill_mongolia{
+        width: 0.13%;
+    }
+    &__bar-fill_china{
+        width: 0.26%;
+    }
+    &__bar-fill_usa{
+        width: 0.20%;
+    }
+    &__bar-fill_other{
+        width: 1.37%;
+    }
+}
+
+// Media for tablets 992px
+@include lg{
+    .progress-chart__header{
+        padding: 25px 50px 25px 50px;
+    }
+    .progress-chart__chart{
+        width: 240px;
+    }
+    .progress-chart__bar{
+        width: 240px;
+    }
+}
+
+// Media for smartphone 568px{
+@include sm{
+    .progress-chart__chart{
+        width: 180px;
+    }
+    .progress-chart__bar{
+        width: 180px;
+    }
+}
+    
+ 

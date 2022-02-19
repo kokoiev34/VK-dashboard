@@ -1,0 +1,80 @@
+.header{
+    display: flex;
+    align-items: center;
+    background: $third-color;
+    grid-area: header;
+    &__profile{
+        display: flex; 
+    }
+    &__title{
+        font-family: gilroy;
+        font-size: 43px;
+        color: $primary-color;
+        margin: auto 0;
+        margin-left: 50px;  
+    }
+    &__search{
+        flex-grow: 1;
+        align-items: center;
+        margin: auto 0;
+    }
+    &__search-hidden{
+        display: none;
+    }
+    &__search-input{
+        width: 153px;
+        height: 32px;
+        border: 1px solid $seventh-color;
+        border-radius: 8px;
+        margin: auto 0;
+        margin-left: 30px;
+        padding: 10px;
+    }
+    &__search-notification{
+        margin: auto 0;
+        margin-left: 20px;
+    }
+    &__profile-hidden{
+        display: none;
+    }
+    &__profile-name{
+        font-size: $primary-font-size;
+        color: $primary-color;
+        margin: auto 0;
+        margin-right: 20px;
+    }
+    &__profile-photo{
+        margin: auto 0;
+        margin-right: 20px;
+    }
+    &__profile-menu{
+        margin: auto 0;
+        margin-right: 40px;
+    }
+}
+
+// Media for smartphones 568px
+@include sm{
+    .header__search-input{
+        display: none;
+    }
+    .header__profile{
+        display: none;
+    }
+    .header__search-notification{
+        display: none;
+    }
+    .header__search-hidden{
+        display: block;
+    }
+    .header__profile-hidden{
+        display: block;
+        margin: 0 30px 0 15px;
+    }
+    .header__title{
+        flex-grow: 1;        
+    }
+    .header__search{
+        flex-grow: 0;
+    }
+}

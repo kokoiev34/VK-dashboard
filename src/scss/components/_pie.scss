@@ -1,0 +1,21 @@
+.pie{
+    padding: 30px 70px 30px 20px;
+    &__title{
+        @include h2;
+    }
+    &__chart{
+        background-image: url(../assets/photo/pie-chart/pie.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 257px;
+        height: 130px;
+        margin: 35px 50px 0px 50px;
+    }
+}
+
+// Media for smartphones 568px
+@include sm{
+    .pie__title{
+        padding-left: 30px;
+    }
+}
